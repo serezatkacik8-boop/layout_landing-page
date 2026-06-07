@@ -69,13 +69,6 @@
   }
 
   &__button {
-    @include on-tablet {
-      width: 392px;
-      margin-inline: auto;
-    }
-
-    @include on-desktop {
-      width: 324px;
-    }
+    // Widths are now inherited from .button
   }
 }

@@ -45,6 +45,15 @@
       border-color: #292929;
     }
 
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 1000px #f8f8fa inset !important;
+      -webkit-text-fill-color: #1d1d1d !important;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
     &--textarea {
       height: 148px;
       resize: none;
@@ -54,10 +63,12 @@
 
   &__button {
     margin-top: 16px;
+    width: 100%;
   }
 
   &__info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     font-style: normal;
   }

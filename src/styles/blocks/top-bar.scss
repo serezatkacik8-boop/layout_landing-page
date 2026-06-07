@@ -13,6 +13,29 @@
   &__icons {
     display: flex;
     gap: 24px;
+    align-items: center;
+    position: relative;
+  }
+
+  &__phone-number {
+    position: absolute;
+    right: 100%;
+    margin-right: 24px;
+    opacity: 0;
+    visibility: hidden;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    transition: opacity 0.3s;
+  }
+
+  .icon--phone:hover + .top-bar__phone-number {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__logo {
