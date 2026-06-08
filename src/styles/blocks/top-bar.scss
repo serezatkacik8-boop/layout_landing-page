@@ -31,6 +31,14 @@
     white-space: nowrap;
 
     transition: opacity 0.3s;
+
+    display: none;
+
+    @include on-desktop {
+      display: block;
+      position: absolute;
+      right: 100%;
+    }
   }
 
   .icon--phone:hover + .top-bar__phone-number {

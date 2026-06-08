@@ -5,6 +5,9 @@
   line-height: 140%;
   scroll-behavior: smooth;
   background-color: #1d1d1d;
+  overflow-x: clip;
+  width: 100%;
+  position: relative;
 
   &:has(.page__menu:target) {
     overflow: hidden;
@@ -14,6 +17,7 @@
     margin: 0;
     min-width: 320px;
     background-color: transparent;
+    overflow-x: clip;
   }
 
   &__menu {
